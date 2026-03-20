@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Factory.Framework;
+
+namespace Factory.CreditCard
+{
+    internal class CreditCard : IProduct
+    {
+        private readonly string owner;
+
+        public CreditCard(string owner)
+        // ˅
+
+        // ˄
+        {
+            // ˅
+            this.owner = owner;
+            Console.WriteLine($"Make {this.owner}'s card.");
+            // ˄
+        }
+
+        public void Use()
+        {
+            // ˅
+            Console.WriteLine($"Use {this.owner}'s card.");
+            // ˄
+        }
+
+        // ˅
+
+        // ˄
+    }
+}
