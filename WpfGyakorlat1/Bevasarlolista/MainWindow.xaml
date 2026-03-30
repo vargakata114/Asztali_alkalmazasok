@@ -1,0 +1,30 @@
+﻿<Window x:Class="Bevasarlolista.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bevasarlolista"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox Grid.Column="0" Margin="10">
+            <ListBoxItem>Tej</ListBoxItem>
+            <ListBoxItem>Kenyér</ListBoxItem>
+            <ListBoxItem>Tojás</ListBoxItem>
+            <ListBoxItem>Alma</ListBoxItem>
+        </ListBox>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <CheckBox Content="Kész" Margin="0,0,0,10"/>
+            <CheckBox Content="Kész" Margin="0,0,0,10"/>
+            <TextBox Text="Új tétel..." Height="25" Margin="0,0,0,10"/>
+            <Button Content="Hozzáadás" Height="30"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
