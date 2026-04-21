@@ -1,0 +1,32 @@
+﻿<Window x:Class="Feladat4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Feladat4"
+        mc:Ignorable="d"
+        Title="Regisztrációs form" Height="450" Width="800">
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Content="Teljes név:" Grid.Column="0" Grid.Row="0"/>
+        <TextBox x:Name="txtNev" Grid.Column="1" Grid.Row="0"/>
+
+        <Label Content="Email cím:" Grid.Column="0" Grid.Row="1"/>
+        <TextBox x:Name="txtEmail" Grid.Column="1" Grid.Row="1"/>
+
+        <CheckBox Content="Feliratkozom a hírlevélre" Margin="0,8" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+        <Button Content="Regisztráció" HorizontalAlignment="Right" Grid.Row="3" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
